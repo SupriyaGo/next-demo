@@ -19,31 +19,31 @@ export default function Navbar({ className }: { className?: string }) {
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
               title="All Courses"
-              href="https://algochurn.com"
+              href="/courses"
               src="https://assets.aceternity.com/demos/algochurn.webp"
               description="Prepare for tech interviews like never before."
             />
             <ProductItem
               title="Basic Music Theory"
-              href="https://tailwindmasterkit.com"
+              href="#"
               src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
               description="Production ready Tailwind css components for your next project"
             />
             <ProductItem
               title="Advanced conposition"
-              href="https://gomoonbeam.com"
+              href="#"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
               description="Never write from scratch again. Go from idea to blog in minutes."
             />
             <ProductItem
               title="Song Writing"
-              href="https://userogue.com"
+              href="#"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
             <ProductItem
               title="Music Production"
-              href="https://userogue.com"
+              href="#"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
               description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
             />
@@ -58,7 +58,7 @@ export default function Navbar({ className }: { className?: string }) {
           </div>
         </MenuItem>
 
-        <Link href={"#"}><MenuItem setActive={setActive} active={active} item="Contsct Us"></MenuItem></Link>
+        <Link href={"/contact"}><MenuItem setActive={setActive} active={active} item="Contsct Us"></MenuItem></Link>
       </Menu>
     </div>
   );
